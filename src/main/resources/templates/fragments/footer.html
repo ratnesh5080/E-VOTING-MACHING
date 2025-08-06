@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>footer</title>
+</head>
+<body>
+     <footer th:fragment="mainFooter" class="bg-primary text-white text-center py-3 mt-5">
+    <p>&copy; <span th:text="${#dates.format(#dates.createNow(),'yyyy')}">2025</span> E-Voting System. All rights reserved.</p>
+</footer>
+     
+</body>
+</html>

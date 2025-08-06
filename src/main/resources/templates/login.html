@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: commonHead('Login')">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - E-Voting System</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<div th:replace="fragments/navbar :: mainNavbar"></div>
+<div class="container mt-5" style="max-width: 400px;">
+  <h2 class="mb-4 text-center">Login</h2>
+  <form id="loginForm" >
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" required />
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" required />
+    </div>
+    <div class="mb-3">
+      <label for="otp" class="form-label">OTP</label>
+      <input type="number" class="form-control" id="otp" required />
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Login</button>
+  </form>
+  <div class="extra-links">
+     <p style="text-align:center;">Forgot Password?<a th:href="@{/register}" >Register</a> </p>
+   </div>
+</div>
+<div th:replace="fragments/footer :: mainFooter"></div>
+<script src="/js/bootstrap.bundle.min.js"></script>
+
+<script th:src="@{/js/scripts.js}"></script>
+
+</body>
+</html>

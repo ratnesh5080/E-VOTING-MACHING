@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: commonHead('Candidate Dashboard')">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Candidate Dashboard-E-Voting System</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<div th:replace="fragments/navbar :: mainNavbar"></div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <div class="container">
+    <a class="navbar-brand" href="/candidate-dashboard">Candidate Dashboard </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#candidateNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="candidateNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <h3>Real-Time Poll Results</h3>
+  <div id="resultsContainer">
+    <!-- Poll results and charts will be shown here -->
+  </div>
+</div>
+<div th:replace="fragments/footer :: mainFooter"></div>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>

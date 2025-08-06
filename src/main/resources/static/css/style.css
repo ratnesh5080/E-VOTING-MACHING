@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* General Page Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Header Section */
+header {
+  padding: 60px 0;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+}
+
+/* Party Logo Section */
+#party-logos img {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#party-logos img:hover {
+  transform: scale(1.05);
+}
+
+/* Forms */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn-primary, .btn-success, .btn-info {
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: commonHead('Home')">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E-Voting System - Home</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<div th:replace="fragments/navbar :: mainNavbar"></div>
+
+
+<header class="py-5 text-center bg-light">
+  <div class="container">
+    <h1 class="display-4">Welcome to the E-Voting System</h1>
+    <p class="lead">Secure. Transparent. Efficient.</p>
+    <a th:href="@{/register}" class="btn btn-primary btn-lg">Get Started</a>
+    
+  </div>
+</header>
+
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Participating Parties</h2>
+  <div class="row" id="party-logos">
+    <div class="col-6 col-md-3 mb-4 text-center">
+      <img src="/images/aap.png" alt="Party One" class="img-fluid" style="max-height:100px" />
+      <h5 class="mt-2">Aam Aadmi Party</h5>
+    </div>
+    <div class="col-6 col-md-3 mb-4 text-center">
+      <img src="/images/bbjp.png" alt="Party Two" class="img-fluid" style="max-height:100px" />
+      <h5 class="mt-2">Bhartiya Janta Party </h5>
+    </div>
+     <div class="col-6 col-md-3 mb-4 text-center">
+      <img src="/images/bsp.jpg" alt="Party One" class="img-fluid" style="max-height:100px" />
+      <h5 class="mt-2">Bahujan Samaj Party</h5>
+    </div>
+     <div class="col-6 col-md-3 mb-4 text-center">
+      <img src="/images/cpi.png" alt="Party One" class="img-fluid" style="max-height:100px" />
+      <h5 class="mt-2">Communist Party of India</h5>
+    </div>
+     <div class="col-6 col-md-3 mb-4 text-center">
+      <img src="/images/inc.png" alt="Party One" class="img-fluid" style="max-height:100px" />
+      <h5 class="mt-2">Indian National Congress Party</h5>
+    </div>
+    <div class="col-6 col-md-3 mb-4 text-center">
+      <img src="/images/sp.png" alt="Party One" class="img-fluid" style="max-height:100px" />
+      <h5 class="mt-2">Samajwadi Party</h5>
+    </div>
+    <div class="col-6 col-md-3 mb-4 text-center">
+      <img src="/images/shiv.png" alt="Party One" class="img-fluid" style="max-height:100px" />
+      <h5 class="mt-2">Shiv Sena Party</h5>
+    </div>
+    <div class="col-6 col-md-3 mb-4 text-center">
+      <img src="/images/npp.png" alt="Party One" class="img-fluid" style="max-height:100px" />
+      <h5 class="mt-2">National People's Party</h5>
+    </div>
+    <!-- Add more parties here -->
+  </div>
+</section>
+<div th:replace="fragments/footer :: mainFooter"></div>
+
+<script th:src="@{/js/scripts.js}"></script>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
